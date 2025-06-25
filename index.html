@@ -1,0 +1,406 @@
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Agenda del Curso: IA y Grandes Modelos de Lenguaje</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #fff;
+                    color: #000;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    width: 100%;
+                }
+                header {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    max-width: 1200px;
+                    width: 100%;
+                }
+                header img {
+                    max-width: 200px;
+                    margin: 0 10px;
+                }
+                h1 {
+                    text-align: center;
+                    color: #333;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px 0;
+                }
+                table, th, td {
+                    border: 1px solid #ddd;
+                }
+                th, td {
+                    padding: 10px;
+                    text-align: center;
+                    color: #000;
+                }
+                th {
+                    background-color: #f4f4f4;
+                }
+                tr {
+                    height: auto;
+                }
+                .blue {
+                    background-color: #add8e6;
+                }
+                .greenblue {
+                    background-color: hwb(189 7% 23% / 0.884);
+                }   
+                .green {
+                    background-color: #d1e7dd;
+                }
+                .softyellow {
+                    background-color: #fff3cd;
+                }
+                .date-column {
+                    width: 100px;
+                    vertical-align: middle;
+                    background-color: #27d5a7e9;
+                    font-weight: bold;
+                }
+
+                        /* Responsive styling for small screens */
+            @media screen and (max-width: 800px) {
+            .container {
+                padding: 10px;
+                max-width: 100%;
+            }
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+            }
+
+            tr {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+        }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div style="align-items: center;">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="images/catedraRTVEmini.png" alt="Cátedra RTVE-UZ"  height=100>
+                            </td>
+                            <td>
+                                <img src="images/catedra-bts-group.png" alt="Cátedra BTS-UZ" height=100>
+                            </td>
+                            <td>
+                                <img src="images/catedra-identy.png" alt="Cátedra Identy-UZ" height=100>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="greenblue">
+                                <h2>
+                                    Curso extraordinario de verano 2025 <br>
+                                    Inteligencia Artificial y Grandes Modelos de Lenguaje: Funcionamiento, Componentes Clave y Aplicaciones <br>
+                                    (segunda edición)
+                                    </h2>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <p style="font-family: Calibri; font-size: 15px; text-align: justify;">
+                    El objetivo de este curso es proporcionar a los participantes una comprensión de los fundamentos y aplicaciones prácticas de la inteligencia artificial centrada en grandes modelos de lenguaje, incluyendo la multimodalidad. Este curso explorará a fondo el funcionamiento interno de estos LLMs, su arquitectura y proporcionará a los participantes las herramientas necesarias para implementar y aprovechar estas tecnologías de manera efectiva. A lo largo del curso, los participantes aprenderán a utilizar diversas bibliotecas y frameworks especializados para trabajar con grandes modelos de lenguaje, así como a abordar desafíos específicos asociados con la multimodalidad. Se explorarán casos de uso y ejemplos de aplicaciones exitosas en áreas como asistentes virtuales, agentes autónomos, generación de historias y narrativa interactiva o resúmenes multimodales.
+                    </p>
+                    <p style="font-family: Calibri; font-size: 15px; text-align: justify;">
+                    El contenido del curso se estructura en módulos teóricos donde se expondrán los conceptos necesarios para la comprensión del funcionamiento de los LLMs y talleres prácticos donde experimentaremos con ellos en escenarios realistas.
+                    </p>
+<!--                    <img src="images/foto-grupo-cex2024.jpg" alt="CEX-2024" style="width: 100%; max-width: 1200px; margin: 20px 0;">
+                    <img src="images/foto-bienvenida.jpg" alt="CEX-2024" style="width: 33%; max-width: 400px; margin: 20px 0;">
+                    <img src="images/foto.clase1.jpg" alt="CEX-2024" style="width: 33%; max-width: 400px; margin: 20px 0;">
+                    <img src="images/foto-clase2.jpg" alt="CEX-2024" style="width: 33%; max-width: 400px; margin: 20px 0;">
+                -->
+                </div>
+                <div style="width: 100%; font: 15px calibri;">
+                    <table>
+                        <tr class="green">
+                            <td>
+                                <strong>Fecha:</strong>
+                            </td>
+                            <td>
+                                <strong>30 de junio, 1 y 2 de julio de 2025</strong>
+                            </td>
+                        </tr>
+                        <tr class="blue" >
+                            <td>
+                                <strong>Lugar:</strong>
+                            </td>
+                            <td>
+                                <strong>
+                                Escuela de Ingeniería y Arquitectura - EINA
+                                <br>
+                                Edificio Ada Byron, Sala Informática A.3, Planta 1,
+                                <br>
+                                María de Luna, 1 - 50018 Zaragoza
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td>
+                                <strong>
+                                Horario:
+                                </strong>
+                            </td>
+                            <td>
+                                <strong>
+                                9:00 a 13:00 y 14:30 a 18:00
+                                </strong>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            <!-- 
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <div style="align-items: center;" class="softyellow">
+                    <h2 style="text-align: center;">
+                    Acceso a la encuesta de conocimientos previos <a href="https://forms.gle/tbzwWwep1LhwpayJ9" target="_blank"><img src="images/tolki-picto-naranja-22.png" width="40px"></a>
+                    </h2>
+                </div>
+            -->
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <h2 style="text-align: center;">Agenda del Curso</h2>
+                <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+                <table>
+                    <tr>
+                        <th rowspan="10" class="date-column">3/07/2024</th>
+                        <th>Ponencia</th>
+                        <th>Hora inicio</th>
+                        <th>Hora final</th>
+                        <th>Ponentes</th>
+                        <th>Materiales</th>
+                    </tr>
+                    <tr class="blue">
+                        <td>Bienvenida, descripción y organización del cursp</td>
+                        <td>9:00</td>
+                        <td>9:30</td>
+                        <td>Eduardo Lleida </td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a></td>
+                    </tr>
+                    <tr>
+                        <td>Introducción a las redes neuronales (parte 1)</td>
+                        <td>9:30</td>
+                        <td>11:00</td>
+                        <td>Alfonso Ortega</td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+                    <tr class="green">
+                        <td>Pausa Café</td>
+                        <td>11:00</td>
+                        <td>11:30</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Introducción a las redes neuronales (parte 2)</td>
+                        <td>11:30</td>
+                        <td>13:30</td>
+                        <td>Antonio Miguel</td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> |
+                            <a href=""><img src="images/colab.png" width="20px" ></a>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6" class="blue">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Taller: Redes Neuronales (parte 1)</td>
+                        <td>15:30</td>
+                        <td>17:30</td>
+                        <td>Alfonso Ortega / Antonio Miguel</td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+                    <tr class="green">
+                        <td>Pausa Café</td>
+                        <td>17:30</td>
+                        <td>18:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Transformers (parte 1)</td>
+                        <td>18:00</td>
+                        <td>19:00</td>
+                        <td>Antonio Miguel</td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+                </table>
+                <hr style="height:1px;border-width:0;background-color:rgba(0, 26, 255, 0.493)">
+                <table>
+                    <tr>
+                        <th rowspan="8" class="date-column">4/07/2024</th>
+                        <th>Ponencia</th>
+                        <th>Hora inicio</th>
+                        <th>Hora final</th>
+                        <th>Ponentes</th>
+                        <th>Materiales</th>
+                    </tr>
+
+                    <tr>
+                        <td>Transformers(parte 2)</td>
+                        <td>9:00</td>
+                        <td>10:30</td>
+                        <td>Antonio Miguel</td>
+                        <td>
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                            
+                        </td>
+                    </tr>
+
+                    <tr class="green">
+                        <td>Pausa Café</td>
+                        <td>10:30</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>Introducción a los modelos de lenguaje</td>
+                        <td>11:00</td>
+                        <td>12:00</td>
+                        <td>Eduardo Lleida</td>
+                        <td><a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Grandes Modelos de Lenguaje (Parte 1)</td>
+                        <td>12:00</td>
+                        <td>13:00</td>
+                        <td>Alfonso Ortega / Eduardo Lleida</td>
+                        <td>
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> | 
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5" class="blue">&nbsp;</td>
+                    </tr>
+
+                                        <tr>
+                        <td>Grandes Modelos de Lenguaje (Parte 2)</td>
+                        <td>15:00</td>
+                        <td>16:00</td>
+                        <td>Alfonso Ortega / Eduardo Lleida</td>
+                        <td>
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> | 
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Taller: Redes Neuronales y Transformers (parte 2a)</td>
+                        <td>16:00</td>
+                        <td>17:00</td>
+                        <td>Antonio Miguel </td>
+                        <td>
+                            <a href=""><img src="images/pdf.png" width="20px" ></a> 
+                        </td>
+                    </tr>
+                    <tr class="green">
+                        <td>Pausa Café</td>
+                        <td>17:00</td>
+                        <td>17:30</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Taller: Redes Neuronales y Transformers (parte 2b)</td>
+                        <td>17:30</td>
+                        <td>18:30</td>
+                        <td>Antonio Miguel</td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+                <hr style="height:1px;border-width:0;background-color:rgba(194, 58, 16, 0.349)">
+                <table>
+                    <tr>
+                        <th rowspan="7" class="date-column">5/07/2024</th>
+                        <th>Ponencia</th>
+                        <th>Hora inicio</th>
+                        <th>Hora final</th>
+                        <th>Ponentes</th>
+                        <th>Materiales</th>
+                    </tr>
+                    <tr>
+                        <td>Grandes Modelos de Lenguaje Multimodales</td>
+                        <td>9:00</td>
+                        <td>10:30</td>
+                        <td>Antonio Miguel / Eduardo Lleida</td>
+                        <td>
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a> |
+                            <a href="" target="_blank"><img src="images/pdf.png" width="20px" ></a>
+                        </td>
+                    </tr>
+                    <tr class="green">
+                        <td>Pausa Café</td>
+                        <td>10:30</td>
+                        <td>11:00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Taller: Grandes Modelos de Lenguaje (parte 1)</td>
+                        <td>11:00</td>
+                        <td>13:00</td>
+                        <td>Antonio Miguel / Alfonso Ortega / Eduardo Lleida</td>
+                        <td>
+                            <a href="" img src="images/colab.png" width="20px" > RAG</a>|
+                            <a href=""><img src="images/colab.png" width="20px" > stui_agente000.py</a>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="blue">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Taller: Grandes Modelos de Lenguaje (parte 2)</td>
+                        <td>14:30</td>
+                        <td>17:30</td>
+                        <td>Antonio Miguel / Alfonso Ortega / Eduardo Lleida</td>
+                        <td>
+                            <a href="https://colab.research.google.com/drive/1O9AkGnR6dHzX-stQRlWDdmEnJv9Fbc4S?usp=sharing"><img src="images/colab.png" width="20px" > CLIP</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Clausura del curso</td>
+                        <td>17:30</td>
+                        <td>18:00</td>
+                        <td>Todos los asistentes</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </body>
+        </html>
+        
